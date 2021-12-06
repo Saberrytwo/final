@@ -57,28 +57,28 @@
                         <a class="breadcrumb-item active" href="{% url 'index' %}">Homepage</a>
                     </ol>
                     <div class="row">
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-primary text-white mb-4">
+                        <div  class="col-xl-6">
+                            <div class="card bg-danger text-white mb-4" style="background-color: grey;">
                                 <div class="card-body">There are Currently 175 Prescribers who Prescribe Only Opiates
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
                                     <a class="small text-white stretched-link" href="{% url 'opiatePrescriber' %}">View
-                                        Prescribers</a>
+                                        Opiate Prescribers</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-warning text-white mb-4">
+                        <div class="col-xl-6">
+                            <div class="card bg-danger text-white mb-4">
                                 <div class="card-body">Full Drug List</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="{% url 'drug' %}">View Full Drug
-                                        List, searchable by name, and opiate/non-opiate!</a>
+                                    <a class="small text-white stretched-link" href="{% url 'drug' %}">View Full Seachable Drug
+                                        List</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6">
+                        <!--<div class="col-xl-3 col-md-6">
                             <div class="card bg-success text-white mb-4">
                                 <div class="card-body">Did You Know?</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
@@ -97,10 +97,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="row">
-                        <div class="col-xl-6">
-                            <div>
+                        <div class="col-xl-6"> 
+                            <div> 
                                 <!-- Deaths per capita graph || height . -->
                                 <div class='tableauPlaceholder' id='viz1638662912832' style='position: relative'>
                                     <noscript><a href='#'><img alt='Opioid Deaths per 100,000 People '
@@ -156,63 +156,26 @@
                                 type='text/javascript'>                    var divElement = document.getElementById('viz1638661458449'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div>
-                                <!-- Deaths per capita graph || height . -->
-                                <div class='tableauPlaceholder' id='viz1638662912832' style='position: relative'>
-                                    <noscript><a href='#'><img alt='Opioid Deaths per 100,000 People '
-                                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DeathsPerCapita&#47;OpioidDeathsper100000People&#47;1_rss.png'
-                                                style='border: none' /></a></noscript><object class='tableauViz'
-                                        style='display:none;'>
-                                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                        <param name='embed_code_version' value='3' />
-                                        <param name='site_root' value='' />
-                                        <param name='name' value='DeathsPerCapita&#47;OpioidDeathsper100000People' />
-                                        <param name='tabs' value='no' />
-                                        <param name='toolbar' value='yes' />
-                                        <param name='static_image'
-                                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DeathsPerCapita&#47;OpioidDeathsper100000People&#47;1.png' />
-                                        <param name='animate_transition' value='yes' />
-                                        <param name='display_static_image' value='yes' />
-                                        <param name='display_spinner' value='yes' />
-                                        <param name='display_overlay' value='yes' />
-                                        <param name='display_count' value='yes' />
-                                        <param name='language' value='en-US' />
-                                        <param name='filter' value='publish=yes' />
-                                    </object>
-                                </div>
-                                <script
-                                    type='text/javascript'>                    var divElement = document.getElementById('viz1638662912832'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                </div>
+                <p></p><p></p>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart me-1"></i>
+                                Did You Know?
                             </div>
+                            <div class="card-body">The highest prescribed opioid in America is Hydrocodone Acetaminophen, with 21777
+                                prescriptions in the last year</div>
                         </div>
-                        <div class="col-xl-6">
-                            <div class='tableauPlaceholder' id='viz1638661458449' style='position: relative'>
-                                <noscript><a href='#'><img alt='Total Prescriptions per Drug '
-                                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TotalPrescriptionsperDrug&#47;TotalPrescriptionsperDrug&#47;1_rss.png'
-                                            style='border: none' /></a></noscript><object class='tableauViz'
-                                    style='display:none;'>
-                                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                    <param name='embed_code_version' value='3' />
-                                    <param name='site_root' value='' />
-                                    <param name='name'
-                                        value='TotalPrescriptionsperDrug&#47;TotalPrescriptionsperDrug' />
-                                    <param name='tabs' value='no' />
-                                    <param name='toolbar' value='yes' />
-                                    <param name='static_image'
-                                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TotalPrescriptionsperDrug&#47;TotalPrescriptionsperDrug&#47;1.png' />
-                                    <param name='animate_transition' value='yes' />
-                                    <param name='display_static_image' value='yes' />
-                                    <param name='display_spinner' value='yes' />
-                                    <param name='display_overlay' value='yes' />
-                                    <param name='display_count' value='yes' />
-                                    <param name='language' value='en-US' />
-                                    <param name='filter' value='publish=yes' />
-                                </object>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart me-1"></i>
+                                Total Number of Opioids Prescribed Last Year
                             </div>
-                            <script type='text/javascript'>
-                                var divElement = document.getElementById('viz1638661458449'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                            </script>
+                            <div class="card-body">279,556 <p></p></div>
                         </div>
                     </div>
                 </div>
@@ -220,7 +183,7 @@
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                        <div class="text-muted">Copyright &copy; INTEX 2021</div>
                         <div>
                             <a href="#">Privacy Policy</a>
                             &middot;
