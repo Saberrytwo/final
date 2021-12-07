@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import deletePrescriberPageView, indexPageView, drugPageView, prescriberPageView, searchDrugsPageView, searchPrescribersPageView, deletePrescriberPageView, addPrescriberPageView, singlePrescriberPageView, singleDrugPageView, updatePresPageView, opiateprescriberPageView
+from .views import deletePrescriberPageView, indexPageView, drugPageView, prescriberPageView, searchDrugsPageView, searchPrescribersPageView, deletePrescriberPageView, addPrescriberPageView, singlePrescriberPageView, singleDrugPageView, updatePresPageView, opiateprescriberPageView, modelsPageView
 
 urlpatterns = [
     path("", indexPageView, name='index'),
@@ -13,4 +13,5 @@ urlpatterns = [
     path("singleDrug/<str:drugname>/", singleDrugPageView, name="singleDrug"),
     path("updatePres/", updatePresPageView, name="updatePres"),
     path("opiatePrescriber/", opiateprescriberPageView, name="opiatePrescriber"),
+    path('models/', modelsPageView, name = 'models'),
 ]

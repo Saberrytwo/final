@@ -7,6 +7,10 @@ from intexApp.models import PdPrescribersCredentials, PdDrugs, PdTriple, PdState
 def indexPageView(request) :
     return render(request, 'intexApp/index.html')
 
+def modelsPageView(request) :
+    return render(request, 'intexApp/models.html')
+
+
 def drugPageView(request) :
     data = PdDrugs.objects.all()
     context = {
